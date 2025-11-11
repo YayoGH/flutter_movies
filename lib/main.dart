@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart';
+import 'weather_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mi Catálogo de Películas',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
+      title: 'Catálogo de Películas + Clima',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const WeatherScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
